@@ -26,8 +26,11 @@ mkdir server && touch server/server.js && touch src/404.html
 mkdir server/routes && touch server/routes/api.js
 
 #fullstack - demo with swapi
-yarn add node-fetch
+yarn add node-fetch react-router-dom file-loader style-loader css-loader node-sass sass-loader
 mkdir server/controllers && touch server/controllers/starWars.js
 touch src/App.jsx
 touch .babelrc
+mkdir src/components && touch src/components/Characters.jsx && touch src/components/Character.jsx
+mkdir src/assets && mkdir src/assets/images
+mkdir src/assets/stylesheets && touch src/assets/stylesheets/layout.scss
 ```
