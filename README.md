@@ -24,4 +24,10 @@ yarn add express body-parser
 yarn add nodemon -D
 mkdir server && touch server/server.js && touch src/404.html
 mkdir server/routes && touch server/routes/api.js
+
+#fullstack - demo with swapi
+yarn add node-fetch
+mkdir server/controllers && touch server/controllers/starWars.js
+touch src/App.jsx
+touch .babelrc
 ```
