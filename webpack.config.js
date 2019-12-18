@@ -12,13 +12,19 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'dist'),
     compress: true,
     hot: true,
     inline: true,
     open: true,
     watchContentBase: true,
-    port: 8000
+    port: 8000,
+    proxy: {
+      '/api/**': {
+        target: 'http://localhost:3000/',
+        secure: false
+      }
+    }
   },
   module: {
     rules: [

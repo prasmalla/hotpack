@@ -18,4 +18,10 @@ touch webpack.config.js
 
 #add entry/output - react for skeleton hello-hot-reload app
 yarn add react react-dom && mkdir src && mkdir dist && touch src/app.js && src/index.html && touch README.md
+
+#add server
+yarn add express body-parser
+yarn add nodemon -D
+mkdir server && touch server/server.js && touch src/404.html
+mkdir server/routes && touch server/routes/api.js
 ```
